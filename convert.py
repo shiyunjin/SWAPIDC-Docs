@@ -27,7 +27,7 @@ line = '';
 
 def replacetpl(file_path):
     global line;
-    pattern = re.compile(b'\$lang\[[^\]]+\]');
+    pattern = re.compile(b'\$lang\[[^\{\}\s]+\]');
 
     # try:
     f = open(file_path,'rb+');
@@ -40,6 +40,7 @@ def replacetpl(file_path):
         for text in result:
             new_str = text.replace(b'$lang[',b'__(');
             new_str = new_str[:-1] + b')';
+            new_str = new_str.replace(b')]}',b'])}'); #修复常见语法转换错误
             line = line.replace(text, new_str);
         f.write(line);
     f.close();

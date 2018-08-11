@@ -9,4 +9,4 @@
 * 系统扩展和系统接口查询
 
 [加入QQ群](http://shang.qq.com/wpa/qunwpa?idkey=f5c21cc50d8a2ea763bc51026393c920be1e20f1622bcb02da2816b6a60e4a34)
-[获取文档](#quick-start)
+[获取文档](#swapidc)

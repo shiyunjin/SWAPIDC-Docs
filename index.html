@@ -12,13 +12,23 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'SWAPIDC',
-      coverpage: true,
-      loadSidebar: true,
-      subMaxLevel: 3,
-      repo: 'https://github.com/shiyunjin/SWAPIDC-Docs'
+        name: 'SWAPIDC',
+        coverpage: true,
+        loadSidebar: true,
+        subMaxLevel: 3,
+        repo: 'https://github.com/shiyunjin/SWAPIDC-Docs',
+        search: {
+          paths: 'auto', // or 'auto'
+          placeholder: '搜索',
+
+          noData: '找不到结果!',
+
+          // 搜索标题的最大程级, 1 - 6
+          depth: 3
+        }
     }
   </script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
 </html>

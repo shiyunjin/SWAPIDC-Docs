@@ -1,3 +1,4 @@
 *.po
+*.pot
 default
 __pycache__

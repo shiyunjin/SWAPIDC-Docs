@@ -6,7 +6,7 @@ import os
 import re
 
 def usage():
-    print('gettext.py -i <inputdir> -o zh-CN.po');
+    print('gettext.py -i <inputdir> -o zh-CN.pot');
 
 def file_extension(path): 
     return os.path.splitext(path)[1];

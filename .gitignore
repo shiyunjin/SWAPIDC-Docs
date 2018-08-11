@@ -1,4 +1,5 @@
 *.po
 *.pot
+*.mo
 default
 __pycache__

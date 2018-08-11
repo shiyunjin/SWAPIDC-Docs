@@ -58,7 +58,7 @@ def main(argv):
         sys.exit(1);
     for opt, arg in opts:
         if opt == '-h':
-            print('convert.py -i <inputdir>');
+            usage();
             sys.exit();
         elif opt in ("-i", "--idir"):
             inputdir = arg
@@ -73,17 +73,8 @@ def main(argv):
     for file in files:
         replacetpl(file);
 
-    """
-    print('输入的文件为：', inputdir);
-    print('输出的文件为：', outputdir);
-    """
 
 if __name__ == "__main__":
         main(sys.argv[1:]);
 
 
-
-
-"""
-
-"""
